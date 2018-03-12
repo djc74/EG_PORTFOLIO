@@ -1,13 +1,27 @@
 html, body {
   margin: 40px;
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .name {
   font-size: 4em;
-  font-weight: 900;
+  font-family: 'Aldrich', sans-serif;
 }
+.name2 {
+  font-size: 4em;
+  font-family: 'Fredericka the Great', cursive;
+}
+.name3 {
+  font-size: 4em;
+  font-family: 'Handlee', cursive;
+}
+.name6 {
+  font-size: 4em;
+  font-family: 'Londrina Sketch', cursive;
+}
+
+
 
 nav {
   display: flex;
