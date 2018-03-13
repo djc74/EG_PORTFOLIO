@@ -91,10 +91,15 @@ nav > div:hover {
     align-items: center;
     font-size: 2em;
     color: #ffeead;
+    text-align: center;
+
 }
 
 .container > div:hover {
   opacity: 0.5;
+}
+
+.container > div > a {
 }
 
 .container > div:nth-child(1n) {
