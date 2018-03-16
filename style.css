@@ -9,6 +9,10 @@ a {
   color: inherit;
 }
 
+img {
+  width: 100%;
+}
+
 .name {
   font-size: 4.5em;
   font-family: 'Handlee', cursive;
@@ -84,39 +88,43 @@ nav > div:hover {
   grid-column: span 2;
 }
 
+.statement {
+  opacity: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+	font-size: 0.5em;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  color: black;
+  }
+
+.statement:hover {
+  opacity: 1;
+}
+
+.label {
+  position: absolute;
+}
 
 .container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #ffeead;
-    text-align: center;
-
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .container > div:hover {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.container > div > a {
-}
-
-.container > div:nth-child(1n) {
-  background-color: #96ceb4;
-}
-
-.container > div:nth-child(3n) {
-  background-color: #88d8b0;
-}
-
-.container > div:nth-child(2n) {
-      background-color: #ff6f69;
-}
-
-.container > div:nth-child(4n) {
-      background-color: #ffcc5c;
-}
 
 footer {
   display: flex;
