@@ -11,6 +11,7 @@ a {
 
 img {
   width: 100%;
+  height: 100%;
 }
 
 .name {
@@ -18,13 +19,44 @@ img {
   font-family: 'Handlee', cursive;
 }
 
-.name:hover {
-  color: #5d5f60;
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
 }
 
-.title {
-  font-size: 2em;
-  color: #5d5f60;
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+
+.hvrbox .hvrbox-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hvrbox .hvrbox-layer_slideup {
+  transform: translateY(100%);
+}
+
+.hvrbox:hover .hvrbox-layer_slideup,
+.hvrbox:active .hvrbox-layer_slideup {
+  transform: translateY(0);
 }
 
 nav {
@@ -88,30 +120,12 @@ nav > div:hover {
   grid-column: span 2;
 }
 
-.statement {
-  opacity: 0;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-	font-size: 0.5em;
-	display: flex;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-  color: black;
-  }
-
-.statement:hover {
-  opacity: 1;
-}
-
-.label {
-  position: absolute;
+.tall {
+  grid-row: span 2;
 }
 
 .container > div {
-  border: 1px solid black;
+  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,11 +134,6 @@ nav > div:hover {
   position: relative;
   overflow: hidden;
 }
-
-.container > div:hover {
-  opacity: 0.2;
-}
-
 
 footer {
   display: flex;
