@@ -20,7 +20,9 @@ img {
   font-family: 'Handlee', cursive;
 }
 
-.hvrbox .hvrbox-layer_bottom {
+
+
+/* .hvrbox .hvrbox-layer_bottom {
 	display: block;
 }
 
@@ -58,7 +60,7 @@ img {
 .hvrbox:hover .hvrbox-layer_slideup,
 .hvrbox:active .hvrbox-layer_slideup {
   transform: translateY(0);
-}
+} */
 
 nav {
   display: flex;
@@ -125,7 +127,7 @@ nav > div:hover {
   grid-row: span 2;
 }
 
-.container > div {
+.container > a {
   background-color: grey;
   display: flex;
   justify-content: center;
@@ -134,6 +136,20 @@ nav > div:hover {
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.projectname {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px 20px;
+  margin: 0;
+  mix-blend-mode: screen;
+  transition: all 500ms ease-in-out;
+  max-width: 60%;
+}
+
+.projectname:hover {
+  opacity: 0;
 }
 
 footer {
