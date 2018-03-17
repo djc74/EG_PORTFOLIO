@@ -145,7 +145,7 @@ nav > div:hover {
   margin: 0;
   mix-blend-mode: screen;
   transition: all 500ms ease-in-out;
-  max-width: 60%;
+  width: 100%;
 }
 
 .projectname:hover {
