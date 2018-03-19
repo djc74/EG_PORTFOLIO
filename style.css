@@ -137,3 +137,18 @@ footer {
   font-size: 0.5em;
   color: #fff
 }
+
+/* touchscreen settings */
+
+@media only screen and (max-width: 768px) {
+
+  .container > a {
+    align-items: flex-start;
+  }
+
+  .projectname {
+    font-size: 1em;
+    height: auto;
+    opacity: 1;
+  }
+}
