@@ -140,7 +140,7 @@ footer {
 
 /* touchscreen settings */
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .container > a {
     align-items: flex-start;
@@ -151,4 +151,5 @@ footer {
     height: auto;
     opacity: 1;
   }
+
 }
