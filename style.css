@@ -11,14 +11,14 @@ a {
 }
 
 img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
 .name {
   font-size: 4em;
   font-weight: 900;
-  color: red;
+  color: #fff;
 }
 
 nav {
@@ -91,13 +91,13 @@ nav > div:hover {
   grid-column: span 3;
 }
 
-.extrawide > img,
-.overflow > img {
+/* .extrawide > img,
+.overflow > img,
+.wide > img {
   width: auto;
-}
+} */
 
 .container > a {
-  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,5 +151,22 @@ footer {
     height: auto;
     opacity: 1;
   }
-
 }
+
+@media screen and (max-width: 425px) {
+
+  .container {
+    display: block;
+  }
+
+  .container > a {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .img {
+    width:100%;
+  }
+
+  }
