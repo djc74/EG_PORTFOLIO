@@ -155,18 +155,38 @@ footer {
 
 @media screen and (max-width: 425px) {
 
+  header {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 2.8em;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  nav > div {
+    font-size: 1.3em;
+    text-align: center;
+    margin-right: 0;
+  }
+
   .container {
     display: block;
   }
 
   .container > a {
-    height: auto;
-    width: 100%;
+    height: 400px;
+    width: auto;
     margin-bottom: 10px;
   }
 
   .img {
-    width:100%;
+    width: 100%;
+    height: 100%;
   }
 
   }
