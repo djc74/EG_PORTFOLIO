@@ -87,15 +87,13 @@ nav > div:hover {
   grid-row: span 2;
 }
 
+.tall > img {
+  width: 100%;
+}
+
 .extrawide {
   grid-column: span 3;
 }
-
-/* .extrawide > img,
-.overflow > img,
-.wide > img {
-  width: auto;
-} */
 
 .container > a {
   display: flex;
@@ -179,14 +177,14 @@ footer {
   }
 
   .container > a {
-    height: 400px;
+    height: 300px;
     width: auto;
     margin-bottom: 10px;
   }
 
-  .img {
+  .tall > img {
     width: 100%;
-    height: 100%;
+    height: 500px;
   }
 
   }
