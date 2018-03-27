@@ -138,7 +138,7 @@ footer {
 
 /* touchscreen settings */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
   .container > a {
     align-items: center;
@@ -151,7 +151,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
 
   header {
     margin: 0 auto;
