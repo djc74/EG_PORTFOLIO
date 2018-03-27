@@ -141,7 +141,7 @@ footer {
   }
 
   .projectname {
-    font-size: 1em;
+    font-size: 2em;
     height: auto;
     opacity: 1;
   }
@@ -151,7 +151,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 
   header {
     margin: 0 auto;
@@ -174,17 +174,21 @@ footer {
   }
 
   .container {
-    grid-auto-flow: row;
+    display: grid;
+    grid-template-columns: auto;
   }
 
   .container > a {
-    height: 300px;
-    width: auto;
     margin-bottom: 10px;
+    min-height: 50vw;
   }
 
-  .wide .extrawide {
+  .wide {
     grid-column: span 1;
   }
 
+  .extrawide {
+    grid-column: span 1;
   }
+
+}
