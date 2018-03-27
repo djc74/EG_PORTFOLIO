@@ -174,21 +174,16 @@ footer {
   }
 
   .container {
-    display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
+    grid-auto-rows: 30vh;
   }
 
-  .container > a {
-    margin-bottom: 10px;
-    min-height: 50vw;
+  .tall {
+    grid-row: span 1;
   }
 
-  .wide {
-    grid-column: span 1;
-  }
-
-  .extrawide {
-    grid-column: span 1;
+  .projectname {
+    font-size: 1em;
   }
 
 }
