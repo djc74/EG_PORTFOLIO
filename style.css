@@ -37,6 +37,12 @@ img {
   grid-row-end: 2;
 }
 
+.projectheadertop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .title {
   color: #fff;
   font-size: 1.7em;
@@ -52,10 +58,6 @@ img {
   grid-row-start: 2;
   grid-row-end: 3;
 }
-
-/* .slideshow-container > .myslides > img {
-  max-height: 100%;
-} */
 
 .mySlides {
   display: none;
@@ -75,7 +77,6 @@ img {
 .prev, .next > img {
   height: 50px;
 }
-
 
 
 /* Fading animation */
@@ -110,6 +111,7 @@ img {
 .burger {
     display: inline-block;
     cursor: pointer;
+    z-index: 2;
 }
 
 .bar1, .bar2, .bar3 {
