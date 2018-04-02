@@ -27,6 +27,16 @@ img {
 
 /* project pages */
 
+.projectcontainer {
+  display: grid;
+  grid-template-rows: 20% 75% 5%;
+}
+
+.projectheader {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
 .title {
   color: #fff;
   font-size: 1.7em;
@@ -37,15 +47,15 @@ img {
 .slideshow-container {
   align-items: center;
   display: flex;
-  position: relative;
   margin: auto;
-  max-width: 90%;
-  height: 500px;
+  position: relative;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-.mySlides > img {
-  height: inherit;
-}
+/* .slideshow-container > .myslides > img {
+  max-height: 100%;
+} */
 
 .mySlides {
   display: none;
@@ -55,7 +65,7 @@ img {
   color: #fff;
 }
 
-/* Next & previous buttons */
+/* previous and next buttons */
 .prev, .next {
   cursor: pointer;
   transition: 0.6s ease;
@@ -65,6 +75,8 @@ img {
 .prev, .next > img {
   height: 50px;
 }
+
+
 
 /* Fading animation */
 .fade {
@@ -82,6 +94,60 @@ img {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.projectfooter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5em;
+  color: #fff;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/* burger menu */
+
+.burger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.projectsidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #353536;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
 /* nav bars */
@@ -110,13 +176,14 @@ nav > div:hover {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #363738;
+  background-color: #353536;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
 }
 
-.sidenav a {
+.sidenav a,
+.projectsidenav a {
   padding: 8px 8px 8px 32px;
   font-size: 1em;
   color: #818181;
@@ -124,11 +191,13 @@ nav > div:hover {
   transition: 0.3s;
 }
 
-.sidenav a:hover {
+.sidenav a:hover,
+.projectsidenav a:hover {
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.sidenav .closebtn,
+.projectsidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;

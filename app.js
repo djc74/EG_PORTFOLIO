@@ -29,3 +29,14 @@
     }
     slides[slideIndex-1].style.display = "block";
   }
+
+  //burger menu
+
+  function burgeropen(e) {
+    e.classList.toggle("change");
+    if (mySideNav.style.width === "250px") {
+        closeNav()
+      } else {
+        openNav()
+      };
+    }

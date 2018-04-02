@@ -10,14 +10,40 @@
     <script src="app.js" charset="utf-8"></script>
   </head>
   <body>
-    <header>
+    <div class="projectcontainer">
+    <div class="projectheader">
       <div class="name"><a href="index.html">Emma Gates</a></div>
+      <div class="burger" onclick="burgeropen(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
       <div class="title">Collecting Christine</div>
-    </header>
+    </div>
+
+    <div id="mySideNav" class="projectsidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Homepage</a>
+      <a href="#">Living with benefits</a>
+      <a href="#">Intimate Stranger</a>
+      <a href="#">Counselling</a>
+      <a href="#">Growing Creativity</a>
+      <a href="#">Exhibitions</a>
+      <a href="#">Harry's Birth</a>
+      <a href="#">Sketchbooks</a>
+      <a href="#">Toilets</a>
+      <a href="#">Young Pirates</a>
+      <a href="#">Appendix</a>
+    </div>
+
     <div class="slideshow-container">
       <a class="prev" onclick="plusSlides(-1)">
         <img src="pictures/arrows/back.png" alt="left-arrow">
        </a>
+       <div class="mySlides fade">
+         <img src="pictures/collecting/Emma Gates personal statement.jpg" alt="statement">
+         <div class="caption"></div>
+       </div>
       <div class="mySlides fade">
         <img src="pictures/collecting/Benjamin and Christine, Lunch on the balcony, Greece 1995 jpg.jpg" alt="Greece 1995">
         <div class="caption">Benjamin and Christine, lunch on the balcony, Greece 1995</div>
@@ -243,10 +269,6 @@
         <div class="caption">Emma and Christine, London 2006</div>
       </div>
       <div class="mySlides fade">
-        <img src="pictures/collecting/Emma Gates personal statement.jpg" alt="statement">
-        <div class="caption"></div>
-      </div>
-      <div class="mySlides fade">
         <img src="pictures/collecting/Emma, Christine, Puerto Soller , Spain. June 1981..jpg" alt="1981">
         <div class="caption">Emma, Christine, Puerto Soller, Spain, June 1981</div>
       </div>
@@ -274,9 +296,10 @@
         <img src="pictures/arrows/next.png" alt="right-arrow">
       </a>
     </div>
-    <footer>
+    <div class="projectfooter">
       <p>©Emma Gates 2018</p>
       <p><a href="#">Made with &hearts; by Big Tent</a></p>
-    </footer>
+    </div>
+  </div>
   </body>
 </html>
