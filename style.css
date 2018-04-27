@@ -106,6 +106,14 @@ img {
   grid-row-end: 4;
 }
 
+/* project pages touchscreen settings */
+
+@media screen and (max-width: 900px) {
+  .prev, .next {
+    display: none;
+  }
+}
+
 /* burger menu */
 
 .burger {
@@ -187,7 +195,7 @@ nav > div:hover {
 .sidenav a,
 .projectsidenav a {
   padding: 8px 8px 8px 32px;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -195,11 +203,10 @@ nav > div:hover {
 
 .sidenav a:hover,
 .projectsidenav a:hover {
-  color: #f1f1f1;
+  color: #fff;
 }
 
-.sidenav .closebtn,
-.projectsidenav .closebtn {
+.sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
