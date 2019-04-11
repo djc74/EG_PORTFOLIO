@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emma Gates Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900"
+      rel="stylesheet"
+    />
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="projectcontainer">
+      <div class="projectheader">
+        <div class="projectheadertop">
+          <div class="name"><a href="index.html">Emma Gates</a></div>
+          <div class="burger" onclick="burgeropen(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <div class="title">Growing creativity</div>
+      </div>
+
+      <div id="mySideNav" class="projectsidenav">
+        <a href="index.html">Homepage</a>
+        <a href="benefits.html">Living with benefits</a>
+        <a href="collect.html">Collecting Christine</a>
+        <a href="intimate.html">Intimate Stranger</a>
+        <a href="counselling.html">Counselling</a>
+        <a href="creativity.html">Growing Creativity</a>
+        <a href="#">Exhibitions</a>
+        <a href="#">Harry's Birth</a>
+        <a href="#">Sketchbooks</a>
+        <a href="toilets.html">Toilets</a>
+        <a href="#">Young Pirates</a>
+      </div>
+
+      <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">
+          <img src="pictures/arrows/back.png" alt="left-arrow" />
+        </a>
+        <div class="mySlides fade">
+          <img src="pictures/growing/1.jpg" alt="Creativity 1" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/2 .jpg" alt="Creativity 2" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/2 [']-.jpg" alt="Creativity 3" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/2 01 BF jenny hicks.jpg"
+            alt="Living with benfits 4"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/02 BF laura bush.JPG" alt="Creativity 5" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/03 BF piera langworth.jpg"
+            alt="Creativity 6"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/04 BF sarah bulter.jpeg"
+            alt="Creativity 7"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/04 BF sarah butler 1.jpeg"
+            alt="Creativity 8"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/05 BF Angharah watson.JPG"
+            alt="Creativity 9"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/06 BF andrea waite.jpg"
+            alt="Creativity 10"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/07 Tina c.jpg" alt="Creativity 11" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/07 tina.jpg" alt="Creativity 12" />
+          <div class="caption">8</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/08 Kelly payne.JPG" alt="Creativity 13" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/08 photo.PNG" alt="Creativity 14" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/09 terri munn photo.png"
+            alt="Creativity 15"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/10 nikki timpsett.jpg"
+            alt="Creativity 16"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/10 nikki tompsett photo.jpg"
+            alt="Creativity 17"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/11 kyla kub.JPG" alt="Creativity 18" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/11 kyla.JPG" alt="Creativity 19" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/12 rachael.jpeg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/13 joanne.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/14 Elizabeth 1.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/14 Elizabeth.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/15 vic.jpeg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/15 vicky jordan .jpeg"
+            alt="Counselling 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/16 carrie 1.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/16 carrie s.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/16 carrie.jpeg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/17 harriet.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/18 kirsten.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/19 natallie.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/19 nattalliee.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/20 m.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/20 miriiijam.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/20 mirjiam.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/21 big eleanor.jpeg"
+            alt="Counselling 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/22 aileen w.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/22 aileen white.JPG"
+            alt="Counselling 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/22 aileen.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/23 becki.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/24 sarah b.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/24 sarah.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/25 elizabeth pole.jpg"
+            alt="Counselling 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/25 elizabeth.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/26 cammy .jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/26 cammyyy.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/26 maybe .JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/27 anna.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/28 me.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/28 meee.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/28 meeee.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/28.me.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/29 Kirsty Gelder .jpg"
+            alt="Counselling 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/30 letitia.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/31 suze.jpeg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/32 stephanie.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/33 jane.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/34 karen.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/35 laura barreettt.jpeg"
+            alt="Counselling 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/35 laura barrett.jpeg"
+            alt="Counselling 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/36 e m m a .JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/36 e.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/36 em.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/36 emma c.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/36 emma clare.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/37 laura.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/38 sarah r.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/38 sarah.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/39 kate.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/45lindsay.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/0407074eab0d2cd7d5bf8cad866654ed.jpg"
+            alt="Counselling 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/12022011042 (1).jpg"
+            alt="Counselling 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/asdfghj.JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/growing/IMG-20140621-WA0000.jpg"
+            alt="Counselling 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/IMG132.jpg" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/growing/P1010989 (1).JPG" alt="Counselling 20" />
+          <div class="caption"></div>
+        </div>
+        <a class="next" onclick="plusSlides(1)">
+          <img src="pictures/arrows/next.png" alt="right-arrow" />
+        </a>
+      </div>
+      <div class="projectfooter">
+        <p>©Emma Gates 2018</p>
+        <p><a href="#">Made with &hearts; by Big Tent</a></p>
+      </div>
+    </div>
+  </body>
+</html>
