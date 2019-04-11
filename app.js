@@ -43,11 +43,11 @@ function burgeropen(e) {
 
 //slick carousel
 
-$(document).ready(function(){
-  $('.carousel').slick({
-    dots: true
-  });
-});
+// $(document).ready(function(){
+//   $('.carousel').slick({
+//     dots: true
+//   });
+// });
 
 //touch
 
@@ -56,7 +56,7 @@ let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
 
-const gestureZone = document.getElementById('mySlides');
+const gestureZone = document.getElementById('swipe');
 
 gestureZone.addEventListener('touchstart', function(event) {
     touchstartX = event.changedTouches[0].screenX;
@@ -83,7 +83,7 @@ function handleGesture() {
     }
 
     if (touchendY > touchstartY) {
-       plusSlides(1);
+       plusSlides(-1);
     }
 
     if (touchendY === touchstartY) {
