@@ -1,59 +1,331 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Emma Gates</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emma Gates Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900"
+      rel="stylesheet"
+    />
     <script src="app.js" charset="utf-8"></script>
   </head>
   <body>
-    <div class="projectheader">
-      <div class="projectheadertop">
-        <div class="name"><a href="index.html">Emma Gates</a></div>
-        <div class="burger" onclick="burgeropen(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+    <div class="projectcontainer">
+      <div class="projectheader">
+        <div class="projectheadertop">
+          <div class="name"><a href="index.html">Emma Gates</a></div>
+          <div class="burger" onclick="burgeropen(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </div>
+        <div class="title">Toilets</div>
       </div>
-      <div class="title">Toilets</div>
+
+      <div id="mySideNav" class="projectsidenav">
+        <a href="index.html">Homepage</a>
+        <a href="benefits.html">Living with benefits</a>
+        <a href="collect.html">Collecting Christine</a>
+        <a href="intimate.html">Intimate Stranger</a>
+        <a href="counselling.html">Counselling</a>
+        <a href="creativity.html">Growing Creativity</a>
+        <a href="#">Exhibitions</a>
+        <a href="#">Harry's Birth</a>
+        <a href="#">Sketchbooks</a>
+        <a href="toilets.html">Toilets</a>
+        <a href="#">Young Pirates</a>
+      </div>
+
+      <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">
+          <img src="pictures/arrows/back.png" alt="left-arrow" />
+        </a>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2006 08 02, 12 42 43.jpg"
+            alt="Toilets 1"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2007 11 24, 01 59 58.jpg"
+            alt="Toilets 2"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2007 11 24, 13 43 29.jpg"
+            alt="Toilets 3"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2008 02 04, 03 32 30.jpg"
+            alt="Toilets 4"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2008 02 04, 05 17 12.jpg"
+            alt="Toilets 5"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2008 02 04, 06 27 16.jpg"
+            alt="Toilets 6"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2008 04 15, 18 17 09.jpg"
+            alt="Toilets 7"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2008 06 09, 00 22 15.jpg"
+            alt="Toilets 8"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2008 06 09, 05 17 58.jpg"
+            alt="Toilets 9"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2008 08 02, 13 08 09.jpg"
+            alt="Toilets 10"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2008 08 02, 13 25 28.jpg"
+            alt="Toilets 11"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2008 08 04, 15 37 51.jpg"
+            alt="Toilets 12"
+          />
+          <div class="caption">8</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2009 02 14, 20 37 11.jpg"
+            alt="Toilets 13"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2009 03 21, 13 08 55.jpg"
+            alt="Toilets 14"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2009 10 30, 12 07 38.jpg"
+            alt="Toilets 15"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2010 07 25, 11 18 50.jpg"
+            alt="Toilets 16"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2010 07 27, 11 11 37.jpg"
+            alt="Toilets 17"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 03 22, 09 38 500.jpg"
+            alt="Toilets 18"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 03 24, 08 51 580.jpg"
+            alt="Toilets 19"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 03 28, 10 59 05.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 05 02, 14 57 16.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 05 31, 13 26 50.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 03 28, 10 59 05.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 05 31, 13 54 23.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 05 31, 13 56 48.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 05 31, 14 19 34.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 05 31, 14 20 51.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 07 23, 15 35 36.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 10 26, 12 36 04.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 10 26, 12 36 57.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2011 10 26, 12 37 08.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2012 01 18, 12 54 27.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="pictures/toilets/2012 01 19, 10 23 02.jpg"
+            alt="Toilets 20"
+          />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/toilets/IMG_0010.jpg" alt="Toilets 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/toilets/IMG_1444.jpg" alt="Toilets 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/toilets/IMG_1472.jpg" alt="Toilets 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/toilets/IMG_1678.jpg" alt="Toilets 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/toilets/IMG_1724.jpg" alt="Toilets 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/toilets/IMG_1739.jpg" alt="Toilets 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/toilets/IMG_1807.jpg" alt="Toilets 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/toilets/IMG_1981.jpg" alt="Toilets 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/toilets/IMG_1985.jpg" alt="Toilets 20" />
+          <div class="caption"></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="pictures/toilets/IMG_1986.jpg" alt="Toilets 20" />
+          <div class="caption"></div>
+        </div>
+        <a class="next" onclick="plusSlides(1)">
+          <img src="pictures/arrows/next.png" alt="right-arrow" />
+        </a>
+      </div>
+      <div class="projectfooter">
+        <p>©Emma Gates 2018</p>
+        <p><a href="#">Made with &hearts; by Big Tent</a></p>
+      </div>
     </div>
-
-    <div id="mySideNav" class="projectsidenav">
-      <a href="index.html">Homepage</a>
-      <a href="#">Living with benefits</a>
-      <a href="#">Intimate Stranger</a>
-      <a href="#">Counselling</a>
-      <a href="#">Growing Creativity</a>
-      <a href="#">Exhibitions</a>
-      <a href="#">Harry's Birth</a>
-      <a href="#">Sketchbooks</a>
-      <a href="#">Toilets</a>
-      <a href="#">Young Pirates</a>
-      <a href="#">Appendix</a>
-    </div>
-
-    <div class="carousel">
-      <div><img src="pictures/toilets/2006 08 02, 12 42 43.jpg" alt=""></div>
-      <div><img src="pictures/toilets/2007 11 24, 01 59 58.jpg" alt=""></div>
-      <div><img src="pictures/toilets/2007 11 24, 13 43 29.jpg" alt=""></div>
-    </div>
-
-
-    <div class="projectfooter">
-      <p>©Emma Gates 2018</p>
-      <p><a href="#">Made with &hearts; by Big Tent</a></p>
-    </div>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
   </body>
 </html>
